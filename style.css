@@ -1,0 +1,9 @@
+$body-background: #777;
+$content-background: #ebebeb;
+
+header {
+    background: #ebebeb;
+    height: 100px;
+    flex: .2;
+    text-align:center;
+}
