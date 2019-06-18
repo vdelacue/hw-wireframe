@@ -68,7 +68,7 @@ section {
 
 aside {
     float: right;
-    width: 350px;
+    width: 380px;
     height: 300px;
     margin-left: 15px;
 }
@@ -79,26 +79,33 @@ footer {
 }
 
 article {
+    background-color: #777;
+    color: #ebebeb;
+    padding: 15px;
+    margin-top: 15px;
+    border: solid;
+    height: 220px;
+
+}
+article.div, article.p {
     background-color: #ebebeb;
     color: #777;
     padding: 15px;
     margin-top: 15px;
-    border: solid;
+    clear: both;
+}
 
-    h1,
-    h2,
-    h3 {
-        display: inline;
-        font-size: 20px;
-    }
+h1 {
+    display: inline;
+    font-size: 20px;
+}
 
-    div,
-    p {
-        background-color: #ebebeb;
-        color: #777;
-        padding: 15px;
-        margin-top: 15px;
-    }
+.hTags, .pTags {
+    background: #ebebeb;
+    color: #777;
+    padding: 15px;
+    margin-top: 15px;
+    text-align: center;
 }
 
 @media (max-width: 960px) {
@@ -117,8 +124,4 @@ article {
     .container {
         width: 100%;
     }
-}
-
-.hTags {
-    display: inline-flex;
 }
