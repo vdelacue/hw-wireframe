@@ -13,9 +13,7 @@
     font-weight: bold;
 }
 
-.clearfix: :after, .clearfix: :before {
-    content: " ";
-} */
+*/
 
 /* 
 header {
@@ -27,71 +25,100 @@ header {
     padding-left: 50%;
 } */
 
+.clearfix::after,
+.clearfix::before {
+    content: " ";
+    clear: both;
+    display: block;
+}
+
 body {
-  background-color: #777;
-  color: #ebebeb;
-  font-family: 'Roboto', sans-serif;
+    background-color: #777;
+    color: #ebebeb;
+    font-family: 'Roboto', sans-serif;
 }
+
 .container {
-  margin-left: auto;
-  margin-right: auto;
-  left: 0;
-  right: 0;
-  position: absolute;
-  width: 960px;
-}
-header, nav, section, aside, footer {
-  background-color: #ebebeb;
-  color: #777;
-  padding: 15px;
-  margin-top: 15px;
-  text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    position: absolute;
+    width: 960px;
 }
 
-section {
-  float: left;
-  width: 660px;
-  margin-bottom: 15px;
-  height: 300px;
-}
-aside {
-  float: left;
-  width: 255px;
-  height: 300px;
-  margin-left: 15px;
-}
-
+header,
+nav,
+section,
+aside,
 footer {
-  clear: both;
-  margin-bottom: 15px;
-}
-article {
-  background-color: #ebebeb;
-  color: #777;
-  padding: 15px;
-  margin-top: 15px;
-  h1, h2, h3 {
-    display: inline-block;
-    font-size: 20px;
-  }
-  div, p{
     background-color: #ebebeb;
     color: #777;
     padding: 15px;
     margin-top: 15px;
-  }
+    text-align: center;
+}
+
+section {
+    float: left;
+    width: 495px;
+    margin-bottom: 15px;
+    height: 300px;
+}
+
+aside {
+    float: right;
+    width: 350px;
+    height: 300px;
+    margin-left: 15px;
+}
+
+footer {
+    clear: both;
+    margin-bottom: 15px;
+}
+
+article {
+    background-color: #ebebeb;
+    color: #777;
+    padding: 15px;
+    margin-top: 15px;
+    border: solid;
+
+    h1,
+    h2,
+    h3 {
+        display: inline;
+        font-size: 20px;
+    }
+
+    div,
+    p {
+        background-color: #ebebeb;
+        color: #777;
+        padding: 15px;
+        margin-top: 15px;
+    }
 }
 
 @media (max-width: 960px) {
-  aside, section {
-    width: 100%;
-  }
-  aside {
-    margin-top: 0;
-    margin-left: 0;
-    margin-bottom: 15px;
-  }
-  .container {
-    width: 100%;
-  }
+
+    aside,
+    section {
+        width: 100%;
+    }
+
+    aside {
+        margin-top: 0;
+        margin-left: 0;
+        margin-bottom: 15px;
+    }
+
+    .container {
+        width: 100%;
+    }
+}
+
+.hTags {
+    display: inline-flex;
 }
